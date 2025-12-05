@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
     // 4 REUSABLE
     setsockopt(sockudp, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
 
-    // 5 RECIEVE
+    // 5 RECEIVE
     sockaddr_in cliaddr2{};
     socklen_t l2 = sizeof(cliaddr2);
 
