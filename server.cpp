@@ -59,10 +59,8 @@ int main(int argc, char **argv) {
 
     char buf[10];
     int i = 0;
-    while(1){
-        int b = recvfrom(sockudp, buf, sizeof(buf), 0, (sockaddr*)&cliaddr2, &l2);
-        printf("%.*s", b, buf);
-    }
+    int b = recvfrom(sockudp, buf, sizeof(buf), 0, (sockaddr*)&cliaddr2, &l2);
+    printf("%.*s", b, buf);
 
     // 6 CLOSE
     close(sockudp);
