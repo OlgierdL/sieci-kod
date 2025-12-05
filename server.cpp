@@ -58,7 +58,6 @@ int main(int argc, char **argv) {
     socklen_t l2 = sizeof(cliaddr2);
 
     char buf[10];
-    int i = 0;
     int b = recvfrom(sockudp, buf, sizeof(buf), 0, (sockaddr*)&cliaddr2, &l2);
     printf("%.*s", b, buf);
 
